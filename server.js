@@ -9,7 +9,7 @@ const morgan = require('morgan');
 const createProxyMiddleware = require('http-proxy-middleware');
 const axios = require('axios');
 
-const service = "http://ec2-18-221-116-138.us-east-2.compute.amazonaws.com:3004"
+const service = "ec2-3-16-203-185.us-east-2.compute.amazonaws.com:3004"
 
 
 proxy.use(compression());
@@ -53,5 +53,5 @@ proxy.post('/newReview/:productid', (req, res) => {
 });
 
 proxy.listen(port, () => {
-  console.log(`Server now listening at http://18.223.43.253:${port}`);
+  console.log(`Server now listening at http://52.14.217.81:${port}`);
 });
